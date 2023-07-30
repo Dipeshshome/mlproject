@@ -1,1 +1,1 @@
-## End to End Machine Learning with best practice.
+## End to End Machine Learning project with best practice.
