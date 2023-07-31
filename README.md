@@ -1,1 +1,2 @@
-## End to End Machine Learning project with best practice.
+## Step by Step Machine Learning project with best practice project structure.
+
