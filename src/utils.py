@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 
 from src.exception import CustomException
+from sklearn.metrics import r2_score
+
 
 def save_obj(file_path,obj):
     try:
@@ -16,4 +18,29 @@ def save_obj(file_path,obj):
             dill.dump(obj,file_obj)   #dill help us to create pickle file
 
     except Exception as e:
-        raise CustomException(e,sys)        
+        raise CustomException(e,sys)
+
+
+def evaluate_models(X_train, y_train,X_test,y_test,models):
+    try:
+        report = {}
+
+        for i in range(len(list(models))):   # list(models)==>converts the keys of the models dictionary into a list
+            model = list(models.values())[i]   #extracting the model object from the dictionary models at a specific index i
+    
+            model.fit(X_train, y_train)  # Train model
+
+            y_train_pred = model.predict(X_train)
+
+            y_test_pred = model.predict(X_test)
+
+            train_model_score = r2_score(y_train, y_train_pred)
+
+            test_model_score = r2_score(y_test, y_test_pred)
+
+            report[list(models.keys())[i]] = test_model_score  #the R2 score of a model is stored in the report dictionary with the corresponding model's name as the key.
+
+        return report
+
+    except Exception as e:
+        raise CustomException(e, sys)            
