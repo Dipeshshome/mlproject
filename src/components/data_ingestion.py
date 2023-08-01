@@ -38,8 +38,6 @@ class DataIngestion:
             train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
 
-            logging.info("Ingestion completed")
-
 #required for data transformation
             return(
                 self.ingestion_config.train_data_path,
@@ -47,8 +45,8 @@ class DataIngestion:
             )
 
         except Exception as e:
+            logging.info('Occured in data ingestion')
             raise CustomException(e,sys)
-
 
 if __name__=="__main__":
     obj=DataIngestion()

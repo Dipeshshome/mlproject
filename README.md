@@ -29,7 +29,7 @@ data_transformation ==> In our case, we create a pipe line for categorical data 
 
 Step 6: Utils:<br>
 It is a kind of helper where common functionalities are stored that entire project can use.<br>
-In our case, saving pickle function <br>
+utils.py ==>In our case, saving pickle function <br>
 model evaluation function <br>
 
 Step 7: Model Trainer:<br>
