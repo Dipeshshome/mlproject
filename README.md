@@ -1,4 +1,38 @@
 ## Step by Step Machine Learning project with best practice project structure.
+ <br>
+
+mlproject
+├── app.py
+├── artifacts
+│   ├── data.csv
+│   ├── model.pkl
+│   ├── preprocessor.pkl
+│   ├── test.csv
+│   └── train.csv
+├── notebook
+│   ├── 1 . EDA STUDENT PERFORMANCE.ipynb
+│   ├── 2. MODEL TRAINING.ipynb
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src
+│   ├── components
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   ├── model_trainer.py
+│   ├── exception.py
+│   ├── logger.py
+│   ├── pipeline
+│   │   ├── predict_pipeline.py
+│   │   ├── train_pipeline.py
+│   ├── utils.py
+└── templates
+    ├── home.html
+    └── index.html
+
+<br>
+
+## Steps
 
 Step 1: Github and Code Setup:<br>
 New environment create,<br>
@@ -33,10 +67,9 @@ model evaluation function <br>
 Step 7: Model Trainer:<br>
 model_trainer.py ==>. In model trainer, I apply different regression technique and ensemble technique then predict from the test data calculate the r2_score.Later I applied hyperparatuning for better exploration. Among the models, I extract the best model.<br>
 
-Step 7: Prdict Pipeline: <br>
-predict_pipeline ==> In this file, I created a web application which will be interacting with pickle files( to transform categorical and neumerical and predict with best model) with respect to input data that I given in the form.
-app.py ==> containing the route definitions and the logic for handling requests and generating appropriate responses  data transformation and prediction.
+Step 8: Prdiction Pipeline: <br>
+predict_pipeline ==> In this file, I created a web application which will be interacting with pickle files( to transform categorical and neumerical and predict with best model) with respect to input data that I given in the form.<br>
+app.py ==> containing the route definitions and the logic for handling requests and generating appropriate responses  data transformation and prediction.<br>
 
-
-
+Step 9: Model Deployment: <br>
 

@@ -111,6 +111,5 @@ class ModelTrainer:
             return r2_square
  
         except Exception as e:
-            logging.info('Occured in model trainer')
             CustomException(e,sys)    
             
