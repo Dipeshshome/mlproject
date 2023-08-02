@@ -1,34 +1,34 @@
 ## Step by Step Machine Learning project with best practice project structure.
  <br>
 
-mlproject
-├── app.py
-├── artifacts
-│   ├── data.csv
-│   ├── model.pkl
-│   ├── preprocessor.pkl
-│   ├── test.csv
-│   └── train.csv
-├── notebook
-│   ├── 1 . EDA STUDENT PERFORMANCE.ipynb
-│   ├── 2. MODEL TRAINING.ipynb
-├── README.md
-├── requirements.txt
-├── setup.py
-├── src
-│   ├── components
-│   │   ├── data_ingestion.py
-│   │   ├── data_transformation.py
-│   │   ├── model_trainer.py
-│   ├── exception.py
-│   ├── logger.py
-│   ├── pipeline
-│   │   ├── predict_pipeline.py
-│   │   ├── train_pipeline.py
-│   ├── utils.py
-└── templates
-    ├── home.html
-    └── index.html
+mlproject<br>
+├── app.py<br>
+├── artifacts<br>
+│   ├── data.csv<br>
+│   ├── model.pkl<br>
+│   ├── preprocessor.pkl<br>
+│   ├── test.csv<br>
+│   └── train.csv<br>
+├── notebook<br>
+│   ├── 1 . EDA STUDENT PERFORMANCE.ipynb<br>
+│   ├── 2. MODEL TRAINING.ipynb<br>
+├── README.md<br>
+├── requirements.txt<br>
+├── setup.py<br>
+├── src<br>
+│   ├── components<br>
+│   │   ├── data_ingestion.py<br>
+│   │   ├── data_transformation.py<br>
+│   │   ├── model_trainer.py<br>
+│   ├── exception.py<br>
+│   ├── logger.py<br>
+│   ├── pipeline<br>
+│   │   ├── predict_pipeline.py<br>
+│   │   ├── train_pipeline.py<br>
+│   ├── utils.py<br>
+└── templates<br>
+    ├── home.html<br>
+    └── index.html<br>
 
 <br>
 
