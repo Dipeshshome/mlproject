@@ -7,7 +7,6 @@ sync with local folder and github, <br>
 mini project structure (setup.py),<br>
 requirements.txt<br>
 
-
 Step 2: Project Structure, Logging and Exception Handling:<br>
 requirements.txt==>in this file we will keep all the libraries and dependencies<br><br>
 setup.py==>setup.py is responsible for creaating my application aas a package in pypi. it creates a connection with requirements.txt to import packages.<br>
@@ -15,7 +14,6 @@ exception.py==>handles all exception using custom exception handling with error 
 logger.py==>logs all the information of success and exception.<br>
 components ==> data ingestion, data transformation and model training.
 pipeline==> predict pipeline, train pipeline.
-
 
 Step 3: Exploratory data analysis and Model training in colab/jupyter notebook.<br>
 
@@ -33,4 +31,12 @@ utils.py ==>In our case, saving pickle function <br>
 model evaluation function <br>
 
 Step 7: Model Trainer:<br>
-model_trainer.py ==>. In model trainer, we apply different regression technique and ensemble technique then predict from the test data calculate the r2_score. Among the models, we extract the best model.<br>
+model_trainer.py ==>. In model trainer, I apply different regression technique and ensemble technique then predict from the test data calculate the r2_score.Later I applied hyperparatuning for better exploration. Among the models, I extract the best model.<br>
+
+Step 7: Prdict Pipeline: <br>
+predict_pipeline ==> In this file, I created a web application which will be interacting with pickle files( to transform categorical and neumerical and predict with best model) with respect to input data that I given in the form.
+app.py ==> containing the route definitions and the logic for handling requests and generating appropriate responses  data transformation and prediction.
+
+
+
+
