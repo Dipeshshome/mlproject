@@ -72,5 +72,6 @@ predict_pipeline ==> In this file, I created a web application which will be int
 app.py ==> containing the route definitions and the logic for handling requests and generating appropriate responses  data transformation and prediction.<br>
 
 Step 9: Model Deployment: <br>
+Deployment in AWS Elastic beanstalk with continous delivery method.
 
 
